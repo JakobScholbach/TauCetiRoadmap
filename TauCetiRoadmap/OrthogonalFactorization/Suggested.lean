@@ -348,7 +348,7 @@ left orthogonal to every class. -/
 theorem leftOrthogonal_of_isColimit_forget_under {X : C}
     {J : Type w} [Category.{w'} J] [IsConnected J] (F : J ⥤ Under X)
     (hF : ∀ j, T.leftOrthogonal (F.obj j).hom)
-    (c : Cocone F) (hc : IsColimit ((Under.forget X).mapCocone c)) :
+    (c : Cocone F) (hc : IsColimit ((CategoryTheory.Under.forget X).mapCocone c)) :
     T.leftOrthogonal c.pt.hom :=
   sorry
 
